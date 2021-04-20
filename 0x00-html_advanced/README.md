@@ -5,7 +5,7 @@ For this project, students are expected to look at this concept:
 
 <a href="https://intranet.hbtn.io/concepts/139">HTML - elements of a web page</a>
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/12/5d9e347964a9cc0e3e24.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4e35fa1692c4b65696a11010d2d82f4cd7c93c3071c727b86bd7de122c97f690)
+![]("https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/12/5d9e347964a9cc0e3e24.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4e35fa1692c4b65696a11010d2d82f4cd7c93c3071c727b86bd7de122c97f690")
 
 ## Welcome!
 Welcome to the Web Stack specialization. The 3 first projects will give you all basics of the Web development: HTML, CSS and Developer tools.
@@ -52,7 +52,7 @@ At the end of this project, you are expected to be able to explain to anyone, <b
 
 ## Sitemap of the project
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/4dec2ba9d84a0a55355b1c1e2de4c57854a2d35a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=80bef4d2ea04c33ba4e7a907d4e08dc118f00ff358e7f5a5fa6f55141e774471)
+![]("https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/4dec2ba9d84a0a55355b1c1e2de4c57854a2d35a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=80bef4d2ea04c33ba4e7a907d4e08dc118f00ff358e7f5a5fa6f55141e774471")
 
 ## Wireframe of ```Techium``` project
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/3e4f9e2b3cb73d1768229e086f5da35337be5c6c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9501f5c6a022eb8110a11bee97d91d2123607a858ea7ca7378dd2d9f6aad3c8c)
+![]("https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/3e4f9e2b3cb73d1768229e086f5da35337be5c6c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210420%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210420T042404Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9501f5c6a022eb8110a11bee97d91d2123607a858ea7ca7378dd2d9f6aad3c8c")
