@@ -73,10 +73,6 @@ a {
     --section-title-color: var(--color-black);
 }
 
-a[href] {
-
-}
-
 a:visited {
     font-style: italic;
 }
