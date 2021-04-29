@@ -73,6 +73,10 @@ a {
     --section-title-color: var(--color-black);
 }
 
+a:link {
+    color: var(--text-color);
+}
+
 a:visited {
     font-style: italic;
 }
