@@ -1,0 +1,16 @@
+/* Write a Sass file */ 
+
+$colorText: #3D3D3D;
+$BackgroundColor: #6D6D6D;
+
+body {
+    color: $colorText;
+    background-color: $BackgroundColor;                    
+}
+  
+p {
+    color: $colorText; }
+
+h2 {
+    background-color: $BackgroundColor;
+}
