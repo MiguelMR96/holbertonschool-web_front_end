@@ -1,7 +1,24 @@
 function countPrimeNumbers() {
-  let primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
-
-  return primeNumbers.length;
+    let currentNumber = 2;
+    let primes = [];
+    while ( currentNumber <= 100 ) {
+        let i = 1;
+        let dividerCounter = 0;
+        while (i <= currentNumber) {
+            if (currentNumber % i == 0){
+                dividerCounter += 1;
+            }
+            if (dividerCounter > 2) {
+                break;
+            }
+            i++;
+        }
+        if (dividerCounter == 2) {
+            primes.push(currentNumber)
+        }
+        currentNumber += 1;
+    }
+    return primes.length;
 }
 
 const t0 = performance.now();
