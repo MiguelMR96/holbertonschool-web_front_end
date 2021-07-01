@@ -18,9 +18,26 @@
 
             function showCookies() {
                 let para = document.createElement('p');
-                let node = document.createTextNode('Cookie: ' + document.cookie);
+                let node = document.createTextNode('Email: ' + getCookie("email") + ' - Firstname: ' + getCookie("firstname"));
                 para.appendChild(node);
                 document.body.appendChild(para);
+            }
+
+            function getCookie(name) {
+                let decodedCookie = decodeURIComponent(document.cookie);
+                let arr = decodedCookie.split(';');
+                let result = {};
+                for (let i = 0; i < arr.length; i++) {
+                    let c = arr[i]
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    result[c.split('=')[0]] = c.split('=')[1]
+                    if (result[name]) {
+                        return result[name];
+                    }
+                }
+                return " ";
             }
 
         </script>
