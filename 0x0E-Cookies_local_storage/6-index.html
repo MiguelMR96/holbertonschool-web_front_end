@@ -18,7 +18,7 @@
         }
 
         function addItemToCart(item) {
-            localStorage.setItem(item, 'True');
+            sessionStorage.setItem(item, 'True');
         }
 
         function createStore() {
@@ -35,9 +35,9 @@
         }
 
         function displayCart() {
-            if (localStorage.length > 0) {
+            if (sessionStorage.length > 0) {
                 let para = document.createElement('p');
-                let paraText = document.createTextNode(`You previously had ${localStorage.length} items in your cart`);
+                let paraText = document.createTextNode(`You previously had ${sessionStorage.length} items in your cart`);
                 para.appendChild(paraText);
                 document.body.appendChild(para);
             }
