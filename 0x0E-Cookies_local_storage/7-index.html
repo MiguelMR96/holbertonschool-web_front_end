@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const availableItems = ['Shampoo', 'Soap', 'Sponge', 'Water'];
+
+
+        /* Checking if there is web storage*/
+        if (typeof(Storage) !== 'undefined') {
+            createStore();
+            displayCart();
+        } else {
+            alert('Sorry, your browser does not support Web storage. Try again with a better one');
+        }
+
+        function getCartFromStorage() {
+            if (sessionStorage.cart) {
+                return JSON.parse(sessionStorage.cart);
+            } else {
+                return {};
+            }
+        }
+
+        function addItemToCart(item) {
+            const cart = getCartFromStorage();
+            if (cart[item]) {
+                cart[item] = cart[item] + 1;
+            } else {
+                cart[item] = 1;
+            }
+            sessionStorage.cart = JSON.stringify(cart);
+            displayCart();
+        }
+
+        function removeItemfromCart(item) {
+            const cart = getCartFromStorage();
+            if (cart[item]) {
+                delete cart[item];
+            }
+            sessionStorage.cart = JSON.stringify(cart);
+            displayCart();
+        }
+
+        function clearCart() {
+            sessionStorage.clear();
+            displayCart();
+        }
+
+        function createStore() {
+            let h = document.createElement('h2');
+            let hText = document.createTextNode('Available products:');
+            h.appendChild(hText);
+            document.body.appendChild(h);
+            let uList = document.createElement('ul');
+            for (let i = 0; i < availableItems.length; i++) {
+                let listTag = document.createElement('li');
+                let item = document.createTextNode(availableItems[i]);
+                listTag.appendChild(item);
+                listTag.onclick = () => addItemToCart(availableItems[i]);
+                uList.appendChild(listTag);
+            }
+            document.body.appendChild(uList);
+        }
+
+        function displayCart() {
+            if (document.getElementById('div')) {
+                let element = document.getElementById("div");
+                while (element.hasChildNodes()) {
+                    element.removeChild(element.firstChild);
+                }
+            } else {
+                let d = document.createElement('div');
+                d.id = "div";
+                let h = document.createElement('h2');
+                let hText = document.createTextNode('Your cart:');
+                h.appendChild(hText);
+                document.body.appendChild(h);
+                document.body.appendChild(d);
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            let ul = document.createElement('ul');
+            let div = document.getElementById('div');
+            cart = getCartFromStorage();
+            if (Object.keys(cart).length > 0) {
+                let li = document.createElement('li');
+                let liText = document.createTextNode(`Clear my cart`);
+                li.appendChild(liText);
+                li.onclick = () => clearCart();
+                ul.appendChild(li);
+                for (const item in cart) {
+                    li = document.createElement('li');
+                    liText = document.createTextNode(`${item} x ${cart[item]} `);
+                    li.appendChild(liText);
+                    let rem = document.createElement('a');
+                    let remText = document.createTextNode('(remove)');
+                    rem.appendChild(remText);
+                    rem.onclick = () => removeItemfromCart(item);
+                    li.appendChild(rem);
+                    ul.appendChild(li);
+                }
+            } else {
+                let li = document.createElement("li");
+                let liText = document.createTextNode("Your cart is empty");
+                li.appendChild(liText);
+                ul.appendChild(li);
+            }
+            div.appendChild(ul);
+        }
+
+    </script>
+</body>
+</html>
